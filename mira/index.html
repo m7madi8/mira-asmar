@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mira Asmar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <header class="nav" data-animate style="--nav-h: 64px;">
+      <div class="container nav__inner">
+        <div class="logo" aria-label="Mira logo">
+           <span class="logo__accent" aria-hidden="true">´</span>
+          <span class="logo__text">MIRA</span>
+        </div>
+
+        <nav class="menu" aria-label="Main">
+          <a href="#" class="menu__link is-active">Home</a>
+          <a href="../projects.html" class="menu__link">Projects <span class="badge">6</span></a>
+          <a href="#" class="menu__link">About</a>
+        </nav>
+
+        <div class="cta">
+          <a href="#" class="btn btn--light desktop-only">Contact me</a>
+          <button class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme" aria-pressed="false">
+            <!-- Moon (default dark) -->
+            <svg class="theme-toggle__icon moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Sun (olive light) -->
+            <svg class="theme-toggle__icon sun" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="12" y1="2" x2="12" y2="5"></line>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+                <line x1="2" y1="12" x2="5" y2="12"></line>
+                <line x1="19" y1="12" x2="22" y2="12"></line>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"></line>
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"></line>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"></line>
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"></line>
+              </g>
+            </svg>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-backdrop" id="mobile-backdrop" hidden></div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile Menu" hidden>
+        <a href="#" class="mobile-link is-active">Home</a>
+        <a href="../projects.html" class="mobile-link">Projects <span class="badge">6</span></a>
+        <a href="#" class="mobile-link">About</a>
+        <a href="#" class="btn btn--light mobile-cta">Contact me</a>
+      </nav>
+    </header>
+
+    <main class="hero container" data-stagger=":scope > *">
+      <section class="profile-card" aria-label="Personal card" data-stagger=":scope > *" data-slide="left">
+        <div class="profile-card__top">
+          <div class="pill"><span class="dot"></span> Ramallah, Palestine</div>
+          <div class="muted">Graphic designer</div>
+        </div>
+
+        <div class="profile-card__user">
+          <div class="avatar" aria-hidden="true">
+            <img class="avatar__img" src="mira.jpg" alt="Mira Asmar" />
+          </div>
+          <div class="user-texts">
+            <div class="user-name">Mira Asmar</div>
+            <div class="user-status"><span class="status-dot is-offline"></span> Currently unavailable</div>
+          </div>
+        </div>
+
+        <div class="profile-card__actions">
+          <a class="btn btn--primary" href="#">Get in touch</a>
+          <a class="btn btn--ghost" href="#">About me</a>
+        </div>
+
+        <div class="profile-card__footer">Not available for work</div>
+      </section>
+
+      <section class="hero__copy" data-stagger=":scope > *" data-slide="right">
+        <h1 class="hero__title">
+          Graphic Design by
+          <span class="highlight">Mira</span>
+        </h1>
+        <p class="hero__desc">
+          I craft clean, high‑impact visuals — logos, brand systems, social content, and marketing assets — that help your brand stand out and communicate clearly.
+        </p>
+      </section>
+
+      <aside class="socials" aria-label="Social links" data-stagger=":scope > *" data-slide="left">
+        <a href="#" aria-label="LinkedIn" class="socials__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4zM8.5 8h3.8v2.2H12.4c.53-1 1.84-2.2 3.78-2.2 4.04 0 4.78 2.66 4.78 6.12V24h-4v-6.9c0-1.65-.03-3.76-2.3-3.76-2.3 0-2.65 1.8-2.65 3.64V24h-4V8z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="socials__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Z"/>
+            <path d="M12 7.5a5.5 5.5 0 1 1-5.5 5.5A5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Z"/>
+            <circle cx="18.25" cy="5.75" r="1.25"/>
+          </svg>
+        </a>
+       
+      </aside>
+    </main>
+
+    <!-- About (Priority) -->
+    <section class="about" data-animate>
+      <div class="container">
+        <div class="about__meta">
+          <div class="about__meta-item">002</div>
+          <div class="about__meta-item">About</div>
+          <div class="about__meta-item">Mira</div>
+        </div>
+
+        <div class="about__eyebrow">( About )</div>
+        <h2 class="about__title">
+          Building <span class="about__highlight">distinctive brands</span><br/>
+          and impactful visual identities
+        </h2>
+      </div>
+    </section>
+
+    <!-- Intro (Priority) -->
+    <section class="intro" data-animate>
+      <div class="container">
+        <div class="intro__grid">
+          <div class="mini-profile">
+            <div class="mini-profile__row">
+              <div class="avatar avatar--sm">
+                <img class="avatar__img" src="mira.jpg" alt="Mira Asmar" />
+              </div>
+              <div>
+                <div class="mini-profile__name">Mira Asmar</div>
+                <div class="mini-profile__status"><span class="status-dot is-offline"></span> Currently unavailable</div>
+              </div>
+            </div>
+          </div>
+          <div class="intro__text">
+            <p class="intro__desc">
+              I'm a graphic designer crafting clear, high‑impact visuals—from brand identities and logo systems to social content and campaign assets. I help brands communicate with clarity and style.
+            </p>
+          </div>
+        </div>
+
+        <div class="logos">
+          <div class="logos__label">// Trained with companies like</div>
+          <div class="logos__grid">
+            <div class="logo-card">IPSUM</div>
+            <div class="logo-card">LOGO</div>
+            <div class="logo-card">LUMY</div>
+            <div class="logo-card">Logoipsum</div>
+            <div class="logo-card">UQAI</div>
+            <div class="logo-card">Logoipsum</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects (Priority) -->
+    <section class="projects" aria-label="Projects" data-animate>
+      <div class="container">
+        <div class="about__meta">
+          <div class="about__meta-item">003</div>
+          <div class="about__meta-item">Works</div>
+          <div class="about__meta-item">Mira</div>
+        </div>
+        <div class="about__eyebrow">( Works )</div>
+        <h2 class="projects__title">Recent Works<span class="accent">.</span></h2>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <a class="project-card__media" href="#" aria-label="Brand Identity project preview"></a>
+            <div class="project-card__meta">
+              <span class="project-card__date">May 2, 2025</span>
+              <span class="project-card__slug">Brand Identity</span>
+            </div>
+            <h3 class="project-card__title"><a href="#">Evolve Coffee Co.</a></h3>
+            <div class="project-card__tags">
+              <span class="chip">Logo Design</span>
+              <span class="chip">Brand Guidelines</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-card__media" href="#" aria-label="Packaging project preview"></a>
+            <div class="project-card__meta">
+              <span class="project-card__date">May 2, 2025</span>
+              <span class="project-card__slug">Packaging</span>
+            </div>
+            <h3 class="project-card__title"><a href="#">Forge Cosmetics</a></h3>
+            <div class="project-card__tags">
+              <span class="chip">Box Design</span>
+              <span class="chip">Label System</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-card__media" href="#" aria-label="Social Media Kit project preview"></a>
+            <div class="project-card__meta">
+              <span class="project-card__date">Apr 7, 2025</span>
+              <span class="project-card__slug">Social Kit</span>
+            </div>
+            <h3 class="project-card__title"><a href="#">Glacier Travel</a></h3>
+            <div class="project-card__tags">
+              <span class="chip">Instagram Templates</span>
+              <span class="chip">Content Design</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-card__media" href="#" aria-label="Editorial design project preview"></a>
+            <div class="project-card__meta">
+              <span class="project-card__date">Mar 16, 2025</span>
+              <span class="project-card__slug">Editorial</span>
+            </div>
+            <h3 class="project-card__title"><a href="#">Nova Magazine</a></h3>
+            <div class="project-card__tags">
+              <span class="chip">Layout</span>
+              <span class="chip">Print Design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience (Priority) -->
+    <section class="experience" aria-label="Professional Experience">
+      <div class="container">
+        <div class="about__meta">
+          <div class="about__meta-item">004</div>
+          <div class="about__meta-item">Experience</div>
+          <div class="about__meta-item">Mira</div>
+        </div>
+
+        <h2 class="experience__title">Professional Experience<span class="accent"></span></h2>
+
+        <ul class="timeline" role="list">
+          <li class="timeline__item" role="listitem" aria-labelledby="exp1-role">
+            <div class="timeline__role" id="exp1-role">Freelance Graphic Designer</div>
+            <div class="timeline__company">Self-employed</div>
+            <div class="timeline__date">2024 – Present</div>
+            <p class="timeline__summary">Delivered custom brand identities and digital assets for 8+ clients; improved engagement by 40%.</p>
+          </li>
+
+          <li class="timeline__item" role="listitem" aria-labelledby="exp2-role">
+            <div class="timeline__role" id="exp2-role">Brand Designer</div>
+            <div class="timeline__company">Repurpose On</div>
+            <div class="timeline__date">2022 – 2024</div>
+            <p class="timeline__summary">Led 5 startup rebrands and built cohesive visual systems aligned with growth goals.</p>
+          </li>
+
+          <li class="timeline__item" role="listitem" aria-labelledby="exp3-role">
+            <div class="timeline__role" id="exp3-role">Graphic Designer</div>
+            <div class="timeline__company">NEON BG</div>
+            <div class="timeline__date">2019 – 2022</div>
+            <p class="timeline__summary">Designed high‑impact campaigns and reusable templates to streamline production.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services (Next) -->
+    <section class="services" data-animate>
+      <div class="container services__inner">
+        <div class="about__meta">
+            <div class="services__meta-item">005</div>
+            <div class="services__meta-item">Services</div>
+            <div class="services__meta-item">Mira</div>
+          </div>
+        <div class="about__eyebrow">( Services )</div>
+        <h2 class="services__title">
+          Thoughtful Graphic Design<br/>
+          That elevates your brand and<br/>
+          <span class="about__highlight">moves people to act</span>
+        </h2>
+        <a href="#" class="btn btn--ghost services__cta">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- Categories (Next) -->
+    <section class="category-section section-01" aria-label="Digital Design" data-animate>
+      <div class="container">
+        <div class="category-row">
+          <div class="category-num">01</div>
+          <div class="category-content">
+            <h3 class="category-title">Brand & Visual Design</h3>
+            <p class="intro__desc">Complete identity systems, logos, color palettes, typography, and visual language for consistent brand expression.</p>
+            <div class="category-chips" role="list">
+              <span class="chip" role="listitem">Logo Suites</span>
+              <span class="chip" role="listitem">Brand Guidelines</span>
+              <span class="chip" role="listitem">Color & Type Systems</span>
+              <span class="chip" role="listitem">Visual Language</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section section-02" aria-label="UI Kits & Design Systems" data-animate>
+      <div class="container">
+        <div class="category-row">
+          <div class="category-num">02</div>
+          <div class="category-content">
+            <h3 class="category-title">Design Systems & Assets</h3>
+            <div class="category-chips" role="list">
+              <span class="chip" role="listitem">Logo Libraries</span>
+              <span class="chip" role="listitem">Brand Pattern Sets</span>
+              <span class="chip" role="listitem">Typography Scales</span>
+              <span class="chip" role="listitem">Social Templates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section section-03" aria-label="Landing Page Design" data-animate>
+      <div class="container">
+        <div class="category-row">
+          <div class="category-num">03</div>
+          <div class="category-content">
+            <h3 class="category-title">Campaign & Marketing Design</h3>
+            <div class="category-chips" role="list">
+              <span class="chip" role="listitem">Ad Creatives</span>
+              <span class="chip" role="listitem">Social Campaigns</span>
+              <span class="chip" role="listitem">Posters & Flyers</span>
+              <span class="chip" role="listitem">Event Branding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section section-04" aria-label="Framer Templates" data-animate>
+      <div class="container">
+        <div class="category-row">
+          <div class="category-num">04</div>
+          <div class="category-content">
+            <h3 class="category-title">Brand Templates</h3>
+            <div class="category-chips" role="list">
+              <span class="chip" role="listitem">Portfolio Templates</span>
+              <span class="chip" role="listitem">Agency Templates</span>
+              <span class="chip" role="listitem">SaaS Templates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process (Next) -->
+    <section class="process" aria-label="Process" data-animate>
+      <div class="container">
+        <div class="about__meta">
+          <div class="about__meta-item">006</div>
+          <div class="about__meta-item">Process</div>
+          <div class="about__meta-item">Mira</div>
+        </div>
+        <div class="about__eyebrow">( Process ) </div>
+        <div class="steps" data-stagger=":scope > *">
+          <article class="step-card">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Discovery</h3>
+            <p class="step-desc">Understanding your goals, audience, and vision to set a clear direction before design begins.</p>
+            <a class="btn btn--ghost" href="#">Get Started</a>
+          </article>
+          <article class="step-card">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Onboarding</h3>
+            <p class="step-desc">Outlining timelines, deliverables, and communication channels for a smooth workflow from day one.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Strategy</h3>
+            <p class="step-desc">Translating insights into structure—defining layout, content hierarchy, and user flow.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">Delivering final assets and publishing live—everything wrapped up and ready to go.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Contact (Last) -->
+    <section class="contact" aria-label="Contact">
+      <div class="container">
+        <div class="about__meta">
+          <div class="about__meta-item">007</div>
+          <div class="about__meta-item">Contact</div>
+          <div class="about__meta-item">Mira</div>
+        </div>
+        <div class="about__eyebrow">( Get in touch )</div>
+        <h2 class="contact__title">Let’s create a distinctive brand for your business<span class="accent">.</span></h2>
+
+        <form class="contact__form" action="#" method="post" onsubmit="return false" novalidate>
+          <div class="form-row form-row--two">
+            <label class="form-field">
+              <span class="form-label">Name</span>
+              <input type="text" name="name"  />
+            </label>
+            <label class="form-field">
+              <span class="form-label">Email</span>
+              <input type="email" name="email"  />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="form-field">
+              <span class="form-label">Project type</span>
+              <input type="text" name="subject" />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="form-field">
+              <span class="form-label">Message</span>
+              <textarea name="message" rows="6" placeholder="Tell me about your brand, goals, and timeline..."></textarea>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--light contact__submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer CTA and links -->
+    <footer class="site-footer" aria-label="Footer" data-animate>
+      <div class="container">
+        <div class="about__meta">
+          <div class="about__meta-item">008</div>
+          <div class="about__meta-item">Footer</div>
+          <div class="about__meta-item">Mira</div>
+        </div>
+        <div class="about__eyebrow">( Footer )</div>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">Mira</div>
+            <p class="footer-desc">I'm a graphic designer crafting identities, packaging, and social content that help brands communicate with clarity and style</p>
+          </div>
+          <nav class="footer-col" aria-label="Footer links">
+            <div class="footer-heading">Links</div>
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">About</a>
+            <a href="../projects.html" class="footer-link">Projects</a>
+            <a href="#" class="footer-link">Book a call</a>
+          </nav>
+          <div class="footer-col">
+            <div class="footer-heading">Follow us</div>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="footer-meta">© 2025 Mira. All rights reserved.  <p>Developed by <a href="https://m7madi8.github.io/Mohammad/" target="_blank" class="signature-link">Mohammad Hroub</a></div>
+      </div>
+    </footer>
+
+    <script src="animations.js" defer></script>
+
+    <!-- Smooth scroll with Lenis (initialized once) -->
+    <script type="module">
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReduced && !window.__lenisInit) {
+        window.__lenisInit = true;
+        const { default: Lenis } = await import('https://unpkg.com/@studio-freight/lenis@1.0.37/dist/lenis.esm.js');
+        const duration = 1.2;      // change to taste
+        const easingPower = 3;     // change to taste
+        const lenis = new Lenis({
+          duration,
+          easing: (t) => 1 - Math.pow(1 - t, easingPower)
+        });
+        function raf(time){
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+      }
+    </script>
+    </body>
+    </html>
+
+

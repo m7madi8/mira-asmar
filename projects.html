@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mira Asmar – Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="mira/styles.css" />
+  </head>
+  <body style="background: #000 url('mira/bac1.png') center top/auto 130vh no-repeat fixed;">
+    <style>
+      /* Responsive background override for medium and small screens */
+      @media (max-width: 1024px) {
+        body{
+          background-color: #000 !important;
+          background-image: url('mira/bac1-small.png') !important;
+          background-position: center top !important;
+          background-size: cover !important;
+          background-repeat: no-repeat !important;
+          background-attachment: scroll !important;
+        }
+      }
+    </style>
+    <style>
+        @media (max-width: 768px) {
+            .body{
+                background:  url('mira/bac1-small.png') center top/auto 100vh no-repeat fixed;
+            }
+        }
+    </style>
+    <div class="page-bg"></div>
+
+    <!-- Header imported from mira/index.html -->
+    <header class="nav" data-animate style="--nav-h: 64px;">
+      <div class="container nav__inner">
+        <div class="logo" aria-label="Mira logo">
+           <span class="logo__accent" aria-hidden="true">´</span>
+          <span class="logo__text">MIRA</span>
+        </div>
+
+        <nav class="menu" aria-label="Main">
+          <a href="mira/index.html" class="menu__link">Home</a>
+          <a href="projects.html" class="menu__link is-active">Projects <span class="badge">6</span></a>
+          <a href="#" class="menu__link">About</a>
+        </nav>
+
+        <div class="cta">
+          <a href="#" class="btn btn--light desktop-only">Contact me</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-backdrop" id="mobile-backdrop" hidden></div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile Menu" hidden>
+        <a href="mira/index.html" class="mobile-link">Home</a>
+        <a href="projects.html" class="mobile-link is-active">Projects <span class="badge">6</span></a>
+        <a href="#" class="mobile-link">About</a>
+        <a href="#" class="btn btn--light mobile-cta">Contact me</a>
+      </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <main class="container" data-animate>
+   
+      <section class="services" style="padding-top:48px; padding-bottom:32px;">
+        <div class="services__inner">
+          <div class="about__eyebrow">( Projects )</div>
+          <h1 class="services__title">Selected Works<span class="accent">.</span></h1>
+        </div>
+      </section>
+
+      <!-- Projects grid -->
+      <section class="projects" aria-label="Projects" data-animate style="background: transparent;">
+        <div class="container">
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <a class="project-card__media" href="#" aria-label="Project preview"></a>
+              <div class="project-card__meta">
+                <span class="project-card__date">May 2, 2025</span>
+                <span class="project-card__slug">Brand Identity</span>
+              </div>
+              <h3 class="project-card__title"><a href="#">Evolve Coffee Co.</a></h3>
+              <div class="project-card__tags">
+                <span class="chip">Logo Design</span>
+                <span class="chip">Brand Guidelines</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a class="project-card__media" href="#" aria-label="Project preview"></a>
+              <div class="project-card__meta">
+                <span class="project-card__date">Apr 18, 2025</span>
+                <span class="project-card__slug">Packaging</span>
+              </div>
+              <h3 class="project-card__title"><a href="#">Forge Cosmetics</a></h3>
+              <div class="project-card__tags">
+                <span class="chip">Box Design</span>
+                <span class="chip">Label System</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a class="project-card__media" href="#" aria-label="Project preview"></a>
+              <div class="project-card__meta">
+                <span class="project-card__date">Apr 7, 2025</span>
+                <span class="project-card__slug">Social Kit</span>
+              </div>
+              <h3 class="project-card__title"><a href="#">Glacier Travel</a></h3>
+              <div class="project-card__tags">
+                <span class="chip">Instagram Templates</span>
+                <span class="chip">Content Design</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a class="project-card__media" href="#" aria-label="Project preview"></a>
+              <div class="project-card__meta">
+                <span class="project-card__date">Mar 16, 2025</span>
+                <span class="project-card__slug">Editorial</span>
+              </div>
+              <h3 class="project-card__title"><a href="#">Nova Magazine</a></h3>
+              <div class="project-card__tags">
+                <span class="chip">Layout</span>
+                <span class="chip">Print Design</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a class="project-card__media" href="#" aria-label="Project preview"></a>
+              <div class="project-card__meta">
+                <span class="project-card__date">Feb 11, 2025</span>
+                <span class="project-card__slug">Brand</span>
+              </div>
+              <h3 class="project-card__title"><a href="#">Nimbus Studio</a></h3>
+              <div class="project-card__tags">
+                <span class="chip">Identity</span>
+                <span class="chip">System</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a class="project-card__media" href="#" aria-label="Project preview"></a>
+              <div class="project-card__meta">
+                <span class="project-card__date">Jan 28, 2025</span>
+                <span class="project-card__slug">Campaign</span>
+              </div>
+              <h3 class="project-card__title"><a href="#">Aurora Foods</a></h3>
+              <div class="project-card__tags">
+                <span class="chip">Social</span>
+                <span class="chip">Ads</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer copied to keep consistency -->
+    <footer class="site-footer" aria-label="Footer" data-animate style="background-color: rgba(0,0,0,0.25); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); margin-top: 40px; padding: 24px 0;">
+      <div class="container">
+       
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">Mira</div>
+            <p class="footer-desc">I'm a graphic designer crafting identities, packaging, and social content that help brands communicate with clarity and style.</p>
+          </div>
+          <nav class="footer-col" aria-label="Footer links">
+            <div class="footer-heading">Links</div>
+            <a href="mira/index.html" class="footer-link">Home</a>
+            <a href="#" class="footer-link">About</a>
+            <a href="projects.html" class="footer-link">Projects</a>
+            <a href="#" class="footer-link">Book a call</a>
+          </nav>
+          <div class="footer-col">
+            <div class="footer-heading">Follow us</div>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="footer-meta">© 2025 Mira. All rights reserved. • <p>Developed by <a href="https://m7madi8.github.io/Mohammad/" target="_blank" class="signature-link">Mohammad Hroub</a></div>
+      </div>
+    </footer>
+
+    <script src="mira/animations.js" defer></script>
+    <script type="module">
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReduced && !window.__lenisInit) {
+        window.__lenisInit = true;
+        const { default: Lenis } = await import('https://unpkg.com/@studio-freight/lenis@1.0.37/dist/lenis.esm.js');
+        const duration = 1.2;
+        const easingPower = 3;
+        const lenis = new Lenis({
+          duration,
+          easing: (t) => 1 - Math.pow(1 - t, easingPower)
+        });
+        function raf(time){
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+      }
+    </script>
+  </body>
+</html>
+
+
