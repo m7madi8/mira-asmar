@@ -605,3 +605,12 @@ body[data-theme="olive"] .form-field input, body[data-theme="olive"] .form-field
 /* chip text hover */
 .chip:hover{ color:#fff }
 
+/* Olive theme UI accents */
+body[data-theme="olive"] .nav{ background: rgba(255,255,255,.6); backdrop-filter: saturate(140%) blur(8px) }
+body[data-theme="olive"] .icon-btn{ background:#ffffff; color:#2e2e2e; border-color: color-mix(in oklab, var(--olive-primary) 40%, #ddd 60%) }
+body[data-theme="olive"] .socials__item{ background:#ffffff; color:#2e2e2e; border-color: color-mix(in oklab, var(--olive-primary) 40%, #ddd 60%) }
+body[data-theme="olive"] .btn--light{ background: var(--olive-btn); color: #ffffff; border-color: color-mix(in oklab, var(--olive-primary) 40%, #ddd 60%) }
+body[data-theme="olive"] .btn--light:hover{ background: var(--olive-btn-hover) }
+body[data-theme="olive"] .btn--primary{ background: var(--olive-accent); color: #ffffff; border-color: color-mix(in oklab, var(--olive-accent) 40%, #ddd 60%) }
+body[data-theme="olive"] .btn--ghost{ background: var(--olive-surface); color: var(--olive-text); border-color: color-mix(in oklab, var(--olive-primary) 40%, #ddd 60%) }
+
