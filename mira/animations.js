@@ -75,6 +75,19 @@ if (!window.__revealInit) {
     document.querySelectorAll(`[${STAGGER_ATTR}]`).forEach((el) => observer.observe(el));
     document.querySelectorAll(`[${SLIDE_ATTR}]`).forEach((el) => observer.observe(el));
 
+    // Loader hide logic
+    (function handleLoader(){
+      const loader = document.getElementById('site-loader');
+      if (!loader) return;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const hide = () => loader.classList.add('is-hidden');
+      if (document.readyState === 'complete' || prefersReduced) {
+        requestAnimationFrame(hide);
+      } else {
+        window.addEventListener('load', () => setTimeout(hide, 300));
+      }
+    })();
+
     // mobile menu interactions
     const burger = document.getElementById('hamburger');
     const menu = document.getElementById('mobile-menu');
